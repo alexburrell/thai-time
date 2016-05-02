@@ -1,5 +1,31 @@
 body {
+    margin: 20px;
     text-align: center;
+    background: #C0D6E4;
+    font-family: 'Itim', cursive;
+    font-size: 2em;
+}
+
+.border-outer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-top: solid 5px #F08080;
+    border-bottom: solid 5px #F08080;
+    z-index: -1;
+}
+
+.border-inner {
+    position: fixed;
+    top: 5px;
+    right: 0;
+    bottom: 5px;
+    left: 0;
+    border-top: solid 5px #FFF;
+    border-bottom: solid 5px #FFF;
+    z-index: -1;
 }
 
 .hours {
