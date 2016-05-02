@@ -13,3 +13,9 @@ body {
 .word {
     color: green;
 }
+
+.hide-colors .hours,
+.hide-colors .minutes,
+.hide-colors .word {
+    color: black;
+}
