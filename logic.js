@@ -1,6 +1,15 @@
 $(document).ready(function() {
-    setInterval(updateTime, 1000);
+    updateAutomatically(true);
+    $("#stop").click(function() {
+        updateAutomatically(false);
+    });
 });
+
+var interval = null;
+function updateAutomatically(shouldUpdate) {
+    if (shouldUpdate) interval = setInterval(updateTime, 1000);
+    else clearInterval(interval);
+}
 
 function updateTime() {
     var now = new Date(),
@@ -8,6 +17,10 @@ function updateTime() {
         minutes = now.getMinutes(),
         seconds = now.getSeconds();
 
+    displayTime(hour, minutes, seconds);
+}
+
+function displayTime(hour, minutes, seconds) {
     var thaiHour = time["hours"][hour]["thai"],
         tens = Math.floor(minutes/10)*10,
         thaiMinutesTens = time["minutes"][tens]["thai"],
