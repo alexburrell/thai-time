@@ -2,8 +2,8 @@ body {
     margin: 20px;
     text-align: center;
     background: #C0D6E4;
-    font-family: 'Itim', cursive;
-    font-size: 2em;
+    font-family: 'Happy Monkey', cursive;
+    font-size: 2.5em;
 }
 
 .border-outer {
@@ -26,6 +26,22 @@ body {
     border-top: solid 5px #FFF;
     border-bottom: solid 5px #FFF;
     z-index: -1;
+}
+
+h1 {
+    font-size: 1em;
+}
+
+.content {
+    margin: 100px 0;
+}
+
+#thai-time {
+    font-family: 'Itim', cursive;
+}
+
+#transcribed-time {
+    font-size: 0.5em;
 }
 
 .hours {

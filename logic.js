@@ -61,7 +61,10 @@ function displayTime(hours, minutes, seconds) {
         thaiMinutesWordTranscribed = time["words"]["minutes"]["transcribed"];
 
     if (minutes === 1) thaiMinutesOnes = time["minutes"]["01"]["thai"];
-    if (minutes === 0) thaiMinutesWord = "";
+    if (minutes === 0) {
+        thaiMinutesWord = "";
+        thaiMinutesWordTranscribed = "";
+    }
 
     if (minutes < 10) minutes = "0" + minutes;
     if (seconds < 10) seconds = "0" + seconds;
