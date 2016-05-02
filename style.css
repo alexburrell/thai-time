@@ -6,26 +6,24 @@ body {
     font-size: 2.5em;
 }
 
-.border-outer {
+.border-top {
     position: fixed;
     top: 0;
     right: 0;
-    bottom: 0;
     left: 0;
+    height: 5px;
     border-top: solid 5px #F08080;
-    border-bottom: solid 5px #F08080;
-    z-index: -1;
+    background: #FFF;
 }
 
-.border-inner {
+.border-bottom {
     position: fixed;
-    top: 5px;
     right: 0;
-    bottom: 5px;
+    bottom: 0;
     left: 0;
-    border-top: solid 5px #FFF;
-    border-bottom: solid 5px #FFF;
-    z-index: -1;
+    height: 5px;
+    border-bottom: solid 5px #F08080;
+    background: #FFF;
 }
 
 h1 {
