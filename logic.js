@@ -1,6 +1,7 @@
 $(document).ready(function() {
+    updateTime();
     updateAutomatically(true);
-    $("#update").click(function() {
+    $("#manual").click(function() {
         updateAutomatically(false);
         var ampm = parseInt($("[name='ampm']").val()),
             hour = parseInt($("[name='hour']").val())+ampm,
@@ -10,6 +11,10 @@ $(document).ready(function() {
         else if (hour === 24) hour = 12;
 
         displayTime(hour, minutes, 0);
+    });
+    $("#live").click(function() {
+        updateTime();
+        updateAutomatically(true);
     });
 });
 
