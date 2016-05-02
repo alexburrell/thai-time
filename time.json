@@ -98,73 +98,65 @@ var time = {
         }
     },
     "minutes": {
-        "tens": {
-            "0": {
-                "thai": "",
-                "transcribed": ""
-            },
-            "1": {
-                "thai": "ten",
-                "transcribed": ""
-            },
-            "2": {
-                "thai": "twenty",
-                "transcribed": ""
-            },
-            "3": {
-                "thai": "thirty",
-                "transcribed": ""
-            },
-            "4": {
-                "thai": "forty",
-                "transcribed": ""
-            },
-            "5": {
-                "thai": "fifty",
-                "transcribed": ""
-            }
+        "0": {
+            "thai": "",
+            "transcribed": ""
         },
-        "ones": {
-            "0": {
-                "thai": "",
-                "transcribed": ""
-            },
-            "1": {
-                "thai": "one",
-                "transcribed": ""
-            },
-            "2": {
-                "thai": "two",
-                "transcribed": ""
-            },
-            "3": {
-                "thai": "three",
-                "transcribed": ""
-            },
-            "4": {
-                "thai": "four",
-                "transcribed": ""
-            },
-            "5": {
-                "thai": "five",
-                "transcribed": ""
-            },
-            "6": {
-                "thai": "six",
-                "transcribed": ""
-            },
-            "7": {
-                "thai": "seven",
-                "transcribed": ""
-            },
-            "8": {
-                "thai": "eight",
-                "transcribed": ""
-            },
-            "9": {
-                "thai": "nine",
-                "transcribed": ""
-            }
+        "10": {
+            "thai": "ten",
+            "transcribed": ""
+        },
+        "20": {
+            "thai": "twenty",
+            "transcribed": ""
+        },
+        "30": {
+            "thai": "thirty",
+            "transcribed": ""
+        },
+        "40": {
+            "thai": "forty",
+            "transcribed": ""
+        },
+        "50": {
+            "thai": "fifty",
+            "transcribed": ""
+        },
+        "1": {
+            "thai": "one",
+            "transcribed": ""
+        },
+        "2": {
+            "thai": "two",
+            "transcribed": ""
+        },
+        "3": {
+            "thai": "three",
+            "transcribed": ""
+        },
+        "4": {
+            "thai": "four",
+            "transcribed": ""
+        },
+        "5": {
+            "thai": "five",
+            "transcribed": ""
+        },
+        "6": {
+            "thai": "six",
+            "transcribed": ""
+        },
+        "7": {
+            "thai": "seven",
+            "transcribed": ""
+        },
+        "8": {
+            "thai": "eight",
+            "transcribed": ""
+        },
+        "9": {
+            "thai": "nine",
+            "transcribed": ""
         }
     }
 }
