@@ -17,18 +17,16 @@ $(document).ready(function() {
         updateAutomatically(true);
     });
 
-    var showHideText = ["Hide", "Show"],
-        transcriptionHidden = false,
-        colorsHidden = false;
+    var showHideText = ["Hide", "Show"];
+    $("#transcribed-time").toggle();
     $("#hide-transcription").click(function() {
         $("#transcribed-time").toggle();
-        transcriptionHidden = !transcriptionHidden | 0;
-        $("#hide-transcription").text(showHideText[transcriptionHidden] + " transcription");
+        $("label[for='hide-transcription']").text(showHideText[$("#hide-transcription").is(":checked")|0] + " transcription");
     });
+    $("body").toggleClass("hide-colors");
     $("#hide-colors").click(function() {
         $("body").toggleClass("hide-colors");
-        colorsHidden = !colorsHidden | 0;
-        $("#hide-colors").text(showHideText[colorsHidden] + " color coding");
+        $("label[for='hide-colors']").text(showHideText[$("#hide-colors").is(":checked")|0] + " color coding");
     });
 });
 
