@@ -16,6 +16,14 @@ $(document).ready(function() {
         updateTime();
         updateAutomatically(true);
     });
+
+    var showHideText = ["Hide", "Show"],
+        hidden = false;
+    $("#hide-transcription").click(function() {
+        $("#transcribed-time").toggle();
+        hidden = !hidden | 0;
+        $("#hide-transcription").text(showHideText[hidden] + " transcription");
+    });
 });
 
 var interval = null;
