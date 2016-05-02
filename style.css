@@ -30,10 +30,6 @@ h1 {
     font-size: 1em;
 }
 
-.hidden {
-    display: none;
-}
-
 .content {
     margin: 100px 0;
 }
@@ -45,6 +41,10 @@ h1 {
 
 #transcribed-time {
     font-size: 0.5em;
+}
+
+.transcription-hidden {
+    opacity: 0;
 }
 
 .hours {

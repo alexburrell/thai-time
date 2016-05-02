@@ -30,7 +30,7 @@ $(document).ready(function() {
 
 var showHideText = ["Hide", "Show"];
 function toggleTranscriptions() {
-    $("#transcribed-time").toggleClass("hidden");
+    $("#transcribed-time").toggleClass("transcription-hidden");
 }
 function toggleColors() {
     $("body").toggleClass("hide-colors");
