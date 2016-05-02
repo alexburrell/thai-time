@@ -4,13 +4,13 @@ $(document).ready(function() {
     $("#manual").click(function() {
         updateAutomatically(false);
         var ampm = parseInt($("[name='ampm']").val()),
-            hour = parseInt($("[name='hour']").val())+ampm,
+            hours = parseInt($("[name='hour']").val())+ampm,
             minutes = parseInt($("[name='minutes']").val());
 
-        if (hour === 12) hour = 0;
-        else if (hour === 24) hour = 12;
+        if (hours === 12) hours = 0;
+        else if (hours === 24) hours = 12;
 
-        displayTime(hour, minutes, 0);
+        displayTime(hours, minutes, 0);
     });
     $("#live").click(function() {
         updateTime();
@@ -26,19 +26,20 @@ function updateAutomatically(shouldUpdate) {
 
 function updateTime() {
     var now = new Date(),
-        hour = now.getHours(),
+        hours = now.getHours(),
         minutes = now.getMinutes(),
         seconds = now.getSeconds();
 
-    displayTime(hour, minutes, seconds);
+    displayTime(hours, minutes, seconds);
 }
 
-function displayTime(hour, minutes, seconds) {
-    var thaiHour = time["hours"][hour]["thai"],
+function displayTime(hours, minutes, seconds) {
+    var thaiHour = time["hours"][hours]["thai"],
         tens = Math.floor(minutes/10)*10,
         thaiMinutesTens = time["minutes"][tens]["thai"],
         thaiMinutesOnes = time["minutes"][minutes-tens]["thai"],
-        thaiMinutesWord = time["words"]["minutes"]["thai"];
+        thaiMinutesWord = time["words"]["minutes"]["thai"],
+        ampm = "AM";
 
     if (minutes === 1) thaiMinutesOnes = time["minutes"]["01"]["thai"];
     if (minutes === 0) thaiMinutesWord = "";
@@ -46,6 +47,13 @@ function displayTime(hour, minutes, seconds) {
     if (minutes < 10) minutes = "0" + minutes;
     if (seconds < 10) seconds = "0" + seconds;
 
-    $("#current-time").text(hour + ":" + minutes + ":" + seconds);
+    if (hours >= 12) {
+        hours = hours-12;
+        ampm = "PM"
+    }
+    if (hours === 0) hours = "12"
+
+    // $("#current-time").text(hour + ":" + minutes + ":" + seconds);
+    $("#current-time").text(hours + ":" + minutes + " " + ampm);
     $("#thai-time").text(thaiHour + " " + thaiMinutesTens + " " + thaiMinutesOnes + " " + thaiMinutesWord);
 }
