@@ -1,7 +1,15 @@
 $(document).ready(function() {
     updateAutomatically(true);
-    $("#stop").click(function() {
+    $("#update").click(function() {
         updateAutomatically(false);
+        var ampm = parseInt($("[name='ampm']").val()),
+            hour = parseInt($("[name='hour']").val())+ampm,
+            minutes = parseInt($("[name='minutes']").val());
+
+        if (hour === 12) hour = 0;
+        else if (hour === 24) hour = 12;
+
+        displayTime(hour, minutes, 0);
     });
 });
 
@@ -28,6 +36,7 @@ function displayTime(hour, minutes, seconds) {
         thaiMinutesWord = time["words"]["minutes"]["thai"];
 
     if (minutes === 1) thaiMinutesOnes = time["minutes"]["01"]["thai"];
+    if (minutes === 0) thaiMinutesWord = "";
 
     if (minutes < 10) minutes = "0" + minutes;
     if (seconds < 10) seconds = "0" + seconds;
