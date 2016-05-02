@@ -4,3 +4,6 @@
 - Cover the different possible ways to say times
 - Add transcriptions (and ability to hide transcriptions)
 - Make it pretty
+- How to read the transcriptions
+- Link to Google Translate for pronunciation
+- Color code transcriptions and Thai to match the parts
