@@ -1,99 +1,99 @@
 var time = {
     "hours": {
         "1": {
-            "thai": "one",
+            "thai": "ตีหนึ่ง",
             "transcribed": ""
         },
         "2": {
-            "thai": "two",
+            "thai": "ตีสอง",
             "transcribed": ""
         },
         "3": {
-            "thai": "three",
+            "thai": "ตีสาม",
             "transcribed": ""
         },
         "4": {
-            "thai": "four",
+            "thai": "ตีสี่",
             "transcribed": ""
         },
         "5": {
-            "thai": "five",
+            "thai": "ตีห้า",
             "transcribed": ""
         },
         "6": {
-            "thai": "six",
+            "thai": "หกโมงเช้า",
             "transcribed": ""
         },
         "7": {
-            "thai": "seven",
+            "thai": "หนึ่งโมงเช้า",
             "transcribed": ""
         },
         "8": {
-            "thai": "eight",
+            "thai": "สองโมงเช้า",
             "transcribed": ""
         },
         "9": {
-            "thai": "nine",
+            "thai": "สามโมงเช้า",
             "transcribed": ""
         },
         "10": {
-            "thai": "ten",
+            "thai": "สี่โมงเช้า",
             "transcribed": ""
         },
         "11": {
-            "thai": "eleven",
+            "thai": "ห้าโมงเช้า",
             "transcribed": ""
         },
         "12": {
-            "thai": "twelve",
+            "thai": "เที่ยง",
             "transcribed": ""
         },
         "13": {
-            "thai": "one",
+            "thai": "บ่ายโมง",
             "transcribed": ""
         },
         "14": {
-            "thai": "two",
+            "thai": "บ่ายสองโมง",
             "transcribed": ""
         },
         "15": {
-            "thai": "three",
+            "thai": "บ่ายสามโมง",
             "transcribed": ""
         },
         "16": {
-            "thai": "four",
+            "thai": "บ่ายสี่โมง",
             "transcribed": ""
         },
         "17": {
-            "thai": "five",
+            "thai": "ห้าโมงเย็น",
             "transcribed": ""
         },
         "18": {
-            "thai": "six",
+            "thai": "หกโมงเย็น",
             "transcribed": ""
         },
         "19": {
-            "thai": "seven",
+            "thai": "ทุ่ม",
             "transcribed": ""
         },
         "20": {
-            "thai": "eight",
+            "thai": "สองทุ่ม",
             "transcribed": ""
         },
         "21": {
-            "thai": "nine",
+            "thai": "สามทุ่ม",
             "transcribed": ""
         },
         "22": {
-            "thai": "ten",
+            "thai": "สี่ทุ่ม",
             "transcribed": ""
         },
         "23": {
-            "thai": "eleven",
+            "thai": "ห้าทุ่ม",
             "transcribed": ""
         },
         "0": {
-            "thai": "twelve",
+            "thai": "เที่ยงคืน",
             "transcribed": ""
         }
     },
@@ -103,59 +103,69 @@ var time = {
             "transcribed": ""
         },
         "10": {
-            "thai": "ten",
+            "thai": "สิบ",
             "transcribed": ""
         },
         "20": {
-            "thai": "twenty",
+            "thai": "ยี่สิบ",
             "transcribed": ""
         },
         "30": {
-            "thai": "thirty",
+            "thai": "สามสิบ",
             "transcribed": ""
         },
         "40": {
-            "thai": "forty",
+            "thai": "สี่สิบ",
             "transcribed": ""
         },
         "50": {
-            "thai": "fifty",
+            "thai": "ห้าสิบ",
+            "transcribed": ""
+        },
+        "01": {
+            "thai": "หนึ่ง",
             "transcribed": ""
         },
         "1": {
-            "thai": "one",
+            "thai": "เอ็ด",
             "transcribed": ""
         },
         "2": {
-            "thai": "two",
+            "thai": "สอง",
             "transcribed": ""
         },
         "3": {
-            "thai": "three",
+            "thai": "สาม",
             "transcribed": ""
         },
         "4": {
-            "thai": "four",
+            "thai": "สี่",
             "transcribed": ""
         },
         "5": {
-            "thai": "five",
+            "thai": "ห้า",
             "transcribed": ""
         },
         "6": {
-            "thai": "six",
+            "thai": "หก",
             "transcribed": ""
         },
         "7": {
-            "thai": "seven",
+            "thai": "เจ็ด",
             "transcribed": ""
         },
         "8": {
-            "thai": "eight",
+            "thai": "แปด",
             "transcribed": ""
         },
         "9": {
-            "thai": "nine",
+            "thai": "เก้า",
+            "transcribed": ""
+        }
+    },
+    "words": {
+        "minutes": {
+            "thai": "นาที",
             "transcribed": ""
         }
     }
