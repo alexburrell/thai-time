@@ -5,4 +5,3 @@
 - Make it pretty
 - How to read the transcriptions
 - Link to Google Translate for pronunciation
-- Default to hiding transcription?
