@@ -2,99 +2,99 @@ var time = {
     "hours": {
         "1": {
             "thai": "ตีหนึ่ง",
-            "transcribed": ""
+            "transcribed": "dtee2 neung1"
         },
         "2": {
             "thai": "ตีสอง",
-            "transcribed": ""
+            "transcribed": "dtee2 saawng5"
         },
         "3": {
             "thai": "ตีสาม",
-            "transcribed": ""
+            "transcribed": "dtee2 saam5"
         },
         "4": {
             "thai": "ตีสี่",
-            "transcribed": ""
+            "transcribed": "dtee2 see1"
         },
         "5": {
             "thai": "ตีห้า",
-            "transcribed": ""
+            "transcribed": "dtee2 haa4"
         },
         "6": {
             "thai": "หกโมงเช้า",
-            "transcribed": ""
+            "transcribed": "hohk1 mo:hng2 chaao3"
         },
         "7": {
             "thai": "หนึ่งโมงเช้า",
-            "transcribed": ""
+            "transcribed": "neung1 mo:hng2 chaao3"
         },
         "8": {
             "thai": "สองโมงเช้า",
-            "transcribed": ""
+            "transcribed": "saawng5 mo:hng2 chaao3"
         },
         "9": {
             "thai": "สามโมงเช้า",
-            "transcribed": ""
+            "transcribed": "saam5 mo:hng2 chaao3"
         },
         "10": {
             "thai": "สี่โมงเช้า",
-            "transcribed": ""
+            "transcribed": "see1 mo:hng2 chaao3"
         },
         "11": {
             "thai": "ห้าโมงเช้า",
-            "transcribed": ""
+            "transcribed": "haa4 mo:hng2 chaao3"
         },
         "12": {
             "thai": "เที่ยง",
-            "transcribed": ""
+            "transcribed": "thiiang4"
         },
         "13": {
             "thai": "บ่ายโมง",
-            "transcribed": ""
+            "transcribed": "baai1 mo:hng2"
         },
         "14": {
             "thai": "บ่ายสองโมง",
-            "transcribed": ""
+            "transcribed": "baai1 saawng5 mo:hng2"
         },
         "15": {
             "thai": "บ่ายสามโมง",
-            "transcribed": ""
+            "transcribed": "baai1 saam5 mo:hng2"
         },
         "16": {
             "thai": "บ่ายสี่โมง",
-            "transcribed": ""
+            "transcribed": "baai1 see1 mo:hng2"
         },
         "17": {
             "thai": "ห้าโมงเย็น",
-            "transcribed": ""
+            "transcribed": "haa4 mo:hng2 yen2"
         },
         "18": {
             "thai": "หกโมงเย็น",
-            "transcribed": ""
+            "transcribed": "hohk1 mo:hng2 yen2"
         },
         "19": {
             "thai": "ทุ่ม",
-            "transcribed": ""
+            "transcribed": "thoom4"
         },
         "20": {
             "thai": "สองทุ่ม",
-            "transcribed": ""
+            "transcribed": "saawng5 thoom4"
         },
         "21": {
             "thai": "สามทุ่ม",
-            "transcribed": ""
+            "transcribed": "saam5 thoom4"
         },
         "22": {
             "thai": "สี่ทุ่ม",
-            "transcribed": ""
+            "transcribed": "see1 thoom4"
         },
         "23": {
             "thai": "ห้าทุ่ม",
-            "transcribed": ""
+            "transcribed": "haa4 thoom4"
         },
         "0": {
             "thai": "เที่ยงคืน",
-            "transcribed": ""
+            "transcribed": "thiiang4 kheuun2"
         }
     },
     "minutes": {
@@ -104,69 +104,69 @@ var time = {
         },
         "10": {
             "thai": "สิบ",
-            "transcribed": ""
+            "transcribed": "sip1"
         },
         "20": {
             "thai": "ยี่สิบ",
-            "transcribed": ""
+            "transcribed": "yee4 sip1"
         },
         "30": {
             "thai": "สามสิบ",
-            "transcribed": ""
+            "transcribed": "saam5 sip1"
         },
         "40": {
             "thai": "สี่สิบ",
-            "transcribed": ""
+            "transcribed": "see1 sip1"
         },
         "50": {
             "thai": "ห้าสิบ",
-            "transcribed": ""
+            "transcribed": "haa4 sip1"
         },
         "01": {
             "thai": "หนึ่ง",
-            "transcribed": ""
+            "transcribed": "neung1"
         },
         "1": {
             "thai": "เอ็ด",
-            "transcribed": ""
+            "transcribed": "et1"
         },
         "2": {
             "thai": "สอง",
-            "transcribed": ""
+            "transcribed": "saawng5"
         },
         "3": {
             "thai": "สาม",
-            "transcribed": ""
+            "transcribed": "saam5"
         },
         "4": {
             "thai": "สี่",
-            "transcribed": ""
+            "transcribed": "see1"
         },
         "5": {
             "thai": "ห้า",
-            "transcribed": ""
+            "transcribed": "haa4"
         },
         "6": {
             "thai": "หก",
-            "transcribed": ""
+            "transcribed": "hohk1"
         },
         "7": {
             "thai": "เจ็ด",
-            "transcribed": ""
+            "transcribed": "jet1"
         },
         "8": {
             "thai": "แปด",
-            "transcribed": ""
+            "transcribed": "bpaaet1"
         },
         "9": {
             "thai": "เก้า",
-            "transcribed": ""
+            "transcribed": "gaao1"
         }
     },
     "words": {
         "minutes": {
             "thai": "นาที",
-            "transcribed": ""
+            "transcribed": "naa2 thee2"
         }
     }
 }

@@ -41,6 +41,11 @@ function displayTime(hours, minutes, seconds) {
         thaiMinutesWord = time["words"]["minutes"]["thai"],
         ampm = "AM";
 
+    var thaiHourTranscribed = time["hours"][hours]["transcribed"],
+        thaiMinutesTensTranscribed = time["minutes"][tens]["transcribed"],
+        thaiMinutesOnesTranscribed = time["minutes"][minutes-tens]["transcribed"],
+        thaiMinutesWordTranscribed = time["words"]["minutes"]["transcribed"];
+
     if (minutes === 1) thaiMinutesOnes = time["minutes"]["01"]["thai"];
     if (minutes === 0) thaiMinutesWord = "";
 
@@ -56,4 +61,5 @@ function displayTime(hours, minutes, seconds) {
     // $("#current-time").text(hour + ":" + minutes + ":" + seconds);
     $("#current-time").text(hours + ":" + minutes + " " + ampm);
     $("#thai-time").text(thaiHour + " " + thaiMinutesTens + " " + thaiMinutesOnes + " " + thaiMinutesWord);
+    $("#transcribed-time").html(thaiHourTranscribed + " " + thaiMinutesTensTranscribed + " " + thaiMinutesOnesTranscribed + " " + thaiMinutesWordTranscribed);
 }
