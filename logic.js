@@ -17,12 +17,12 @@ $(document).ready(function() {
         updateAutomatically(true);
     });
 
-    var showHideText = ["Hide", "Show"],
+    var showHideTranscriptionText = ["Hide transcription", "Show transcription"],
         hidden = false;
     $("#hide-transcription").click(function() {
         $("#transcribed-time").toggle();
         hidden = !hidden | 0;
-        $("#hide-transcription").text(showHideText[hidden] + " transcription");
+        $("#hide-transcription").text(showHideTranscriptionText[hidden]);
     });
 });
 
@@ -67,7 +67,19 @@ function displayTime(hours, minutes, seconds) {
     if (hours === 0) hours = "12"
 
     // $("#current-time").text(hour + ":" + minutes + ":" + seconds);
-    $("#current-time").text(hours + ":" + minutes + " " + ampm);
-    $("#thai-time").text(thaiHour + " " + thaiMinutesTens + " " + thaiMinutesOnes + " " + thaiMinutesWord);
-    $("#transcribed-time").html(thaiHourTranscribed + " " + thaiMinutesTensTranscribed + " " + thaiMinutesOnesTranscribed + " " + thaiMinutesWordTranscribed);
+    $("#current-time").html(htmlH(hours) + ":" + htmlM(minutes) + " " + htmlH(ampm));
+    $("#thai-time").html(htmlH(thaiHour) + htmlM(thaiMinutesTens) + htmlM(thaiMinutesOnes) + htmlW(thaiMinutesWord));
+    $("#transcribed-time").html(htmlH(thaiHourTranscribed) + " " + htmlM(thaiMinutesTensTranscribed) + " " + htmlM(thaiMinutesOnesTranscribed) + " " + htmlW(thaiMinutesWordTranscribed));
+}
+
+function htmlH(hours) {
+    return "<span class='hours'>" + hours + "</span>";
+}
+
+function htmlM(minutes) {
+    return "<span class='minutes'>" + minutes + "</span>";
+}
+
+function htmlW(word) {
+    return "<span class='word'>" + word + "</span>";
 }
