@@ -1,20 +1,61 @@
+var currentHours = 0,
+    currentMinutes = 0;
+
 $(document).ready(function() {
     updateTime();
     updateAutomatically(true);
-    $("#manual").click(function() {
-        updateAutomatically(false);
-        var ampm = parseInt($("[name='ampm']").val()),
-            hours = parseInt($("[name='hour']").val())+ampm,
-            minutes = parseInt($("[name='minutes']").val());
-
-        if (hours === 12) hours = 0;
-        else if (hours === 24) hours = 12;
-
-        displayTime(hours, minutes, 0);
-    });
     $("#live").click(function() {
         updateTime();
         updateAutomatically(true);
+    });
+
+    $("#add-hour").click(function() {
+        updateAutomatically(false);
+        var newHours = currentHours + 1;
+        if (newHours === 24) newHours = 0;
+        displayTime(newHours, currentMinutes, 0);
+    });
+
+    $("#subtract-hour").click(function() {
+        updateAutomatically(false);
+        var newHours = currentHours - 1;
+        if (newHours === -1) newHours = 23;
+        displayTime(newHours, currentMinutes, 0);
+    });
+
+    $("#add-minute-ten").click(function() {
+        updateAutomatically(false);
+        var newMinutes = currentMinutes + 10;
+        if (newMinutes >= 60) newMinutes = newMinutes - 60;
+        displayTime(currentHours, newMinutes, 0);
+    });
+
+    $("#subtract-minute-ten").click(function() {
+        updateAutomatically(false);
+        var newMinutes = currentMinutes - 10;
+        if (newMinutes <= 0) newMinutes = newMinutes + 60;
+        displayTime(currentHours, newMinutes, 0);
+    });
+
+    $("#add-minute-one").click(function() {
+        updateAutomatically(false);
+        var newMinutes = currentMinutes + 1;
+        if (newMinutes >= 60) newMinutes = 0;
+        displayTime(currentHours, newMinutes, 0);
+    });
+
+    $("#subtract-minute-one").click(function() {
+        updateAutomatically(false);
+        var newMinutes = currentMinutes - 1;
+        if (newMinutes <= 0) newMinutes = 59;
+        displayTime(currentHours, newMinutes, 0);
+    });
+
+    $("#add-ampm, #subtract-ampm").click(function() {
+        updateAutomatically(false);
+        var newHours = currentHours + 12;
+        if (newHours >= 24) newHours = newHours - 24;
+        displayTime(newHours, currentMinutes, 0);
     });
 
     $("#hide-transcription").click(function() {
@@ -52,6 +93,9 @@ function updateTime() {
 }
 
 function displayTime(hours, minutes, seconds) {
+    currentHours = hours;
+    currentMinutes = minutes;
+
     var thaiHour = time["hours"][hours]["thai"],
         tens = Math.floor(minutes/10)*10,
         thaiMinutesTens = time["minutes"][tens]["thai"],
@@ -64,10 +108,13 @@ function displayTime(hours, minutes, seconds) {
         thaiMinutesOnesTranscribed = time["minutes"][minutes-tens]["transcribed"],
         thaiMinutesWordTranscribed = time["words"]["minutes"]["transcribed"];
 
+    var minutesWordNotes = time["words"]["minutes"]["notes"];
+
     if (minutes === 1) thaiMinutesOnes = time["minutes"]["01"]["thai"];
     if (minutes === 0) {
         thaiMinutesWord = "";
         thaiMinutesWordTranscribed = "";
+        minutesWordNotes = "";
     }
 
     if (minutes < 10) minutes = "0" + minutes;
@@ -77,12 +124,20 @@ function displayTime(hours, minutes, seconds) {
         hours = hours-12;
         ampm = "PM"
     }
-    if (hours === 0) hours = "12"
+    if (hours === 0) hours = "12";
+
+    minutes = minutes+"";
 
     // $("#current-time").text(hour + ":" + minutes + ":" + seconds);
-    $("#current-time").html(htmlH(hours) + ":" + htmlM(minutes) + " " + htmlH(ampm));
+    // $("#current-time").html(htmlH(hours) + ":" + htmlM(minutes) + " " + htmlH(ampm));
+    $("#current-hour").html(htmlH(hours));
+    $("#current-minutes-ten").html(htmlM(minutes[0]));
+    $("#current-minutes-one").html(htmlM(minutes[1]));
+    $("#current-ampm").html(htmlH(ampm));
     $("#thai-time").html(htmlH(thaiHour) + htmlM(thaiMinutesTens) + htmlM(thaiMinutesOnes) + htmlW(thaiMinutesWord));
     $("#transcribed-time").html(htmlH(thaiHourTranscribed) + " " + htmlM(thaiMinutesTensTranscribed) + " " + htmlM(thaiMinutesOnesTranscribed) + " " + htmlW(thaiMinutesWordTranscribed));
+
+    $("#notes-content").html(htmlW(minutesWordNotes));
 }
 
 function htmlH(hours) {

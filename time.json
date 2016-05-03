@@ -166,7 +166,8 @@ var time = {
     "words": {
         "minutes": {
             "thai": "นาที",
-            "transcribed": "naa2 thee2"
+            "transcribed": "naa2 thee2",
+            "notes": "นาที means \"minutes\""
         }
     }
 }
