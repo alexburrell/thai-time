@@ -142,18 +142,22 @@ function displayTime(hours, minutes, seconds) {
 }
 
 function htmlH(hours) {
+    if (hours === "") return "";
     return "<span class='hours'>" + hours + "</span>";
 }
 
 function htmlM(minutes) {
+    if (minutes === "") return "";
     return "<span class='minutes'>" + minutes + "</span>";
 }
 
 function htmlW(word) {
+    if (word === "") return "";
     return "<span class='word'>" + word + "</span>";
 }
 
 function htmlLi(item) {
+    if (item === "") return "";
     return "<li>" + item + "</li>";
 }
 
