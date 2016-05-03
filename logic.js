@@ -108,7 +108,8 @@ function displayTime(hours, minutes, seconds) {
         thaiMinutesOnesTranscribed = time["minutes"][minutes-tens]["transcribed"],
         thaiMinutesWordTranscribed = time["words"]["minutes"]["transcribed"];
 
-    var minutesWordNotes = time["words"]["minutes"]["notes"];
+    var minutesWordNotes = time["words"]["minutes"]["notes"],
+        linkNotes = htmlLink("https://translate.google.com/#th/en/"+thaiHour+thaiMinutesTens+thaiMinutesOnes+thaiMinutesWord);
 
     if (minutes === 1) thaiMinutesOnes = time["minutes"]["01"]["thai"];
     if (minutes === 0) {
@@ -137,7 +138,7 @@ function displayTime(hours, minutes, seconds) {
     $("#thai-time").html(htmlH(thaiHour) + htmlM(thaiMinutesTens) + htmlM(thaiMinutesOnes) + htmlW(thaiMinutesWord));
     $("#transcribed-time").html(htmlH(thaiHourTranscribed) + " " + htmlM(thaiMinutesTensTranscribed) + " " + htmlM(thaiMinutesOnesTranscribed) + " " + htmlW(thaiMinutesWordTranscribed));
 
-    $("#notes-content").html(htmlW(minutesWordNotes));
+    $("#notes-content").html(htmlLi(htmlW(minutesWordNotes)) + htmlLi(linkNotes));
 }
 
 function htmlH(hours) {
@@ -150,4 +151,12 @@ function htmlM(minutes) {
 
 function htmlW(word) {
     return "<span class='word'>" + word + "</span>";
+}
+
+function htmlLi(item) {
+    return "<li>" + item + "</li>";
+}
+
+function htmlLink(link) {
+    return "<a href='" + link + "'>Hear this time pronounced on Google Translate</a>";
 }
