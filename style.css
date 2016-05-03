@@ -1,5 +1,5 @@
 body {
-    margin: 20px;
+    margin: 20px 0;
     text-align: center;
     /*background: #C0D6E4;*/
     font-family: 'Happy Monkey', cursive;
@@ -94,4 +94,11 @@ button {
 
 input {
     margin: 0 10px 0 20px;
+}
+
+.about {
+    background: #FFF68F;
+    /*color: #FFF;*/
+    padding: 15px 35px;
+    text-align: left;
 }
