@@ -2,172 +2,217 @@ var time = {
     "hours": {
         "1": {
             "thai": "ตีหนึ่ง",
-            "transcribed": "dtee2 neung1"
+            "transcribed": "dtee2 neung1",
+            "notes": []
         },
         "2": {
             "thai": "ตีสอง",
-            "transcribed": "dtee2 saawng5"
+            "transcribed": "dtee2 saawng5",
+            "notes": []
         },
         "3": {
             "thai": "ตีสาม",
-            "transcribed": "dtee2 saam5"
+            "transcribed": "dtee2 saam5",
+            "notes": []
         },
         "4": {
             "thai": "ตีสี่",
-            "transcribed": "dtee2 see1"
+            "transcribed": "dtee2 see1",
+            "notes": []
         },
         "5": {
             "thai": "ตีห้า",
-            "transcribed": "dtee2 haa4"
+            "transcribed": "dtee2 haa4",
+            "notes": []
         },
         "6": {
             "thai": "หกโมงเช้า",
-            "transcribed": "hohk1 mo:hng2 chaao3"
+            "transcribed": "hohk1 mo:hng2 chaao3",
+            "notes": ["เช้า is sometimes omitted, so you might hear หกโมง, especially when followed by minutes"]
         },
         "7": {
             "thai": "หนึ่งโมงเช้า",
-            "transcribed": "neung1 mo:hng2 chaao3"
+            "transcribed": "neung1 mo:hng2 chaao3",
+            "notes": ["You might hear เจ็ด(7)โมงเช้า instead",
+                      "เช้า is sometimes omitted, so you might hear หนึ่งโมง or เจ็ดโมง, especially when followed by minutes"]
         },
         "8": {
             "thai": "สองโมงเช้า",
-            "transcribed": "saawng5 mo:hng2 chaao3"
+            "transcribed": "saawng5 mo:hng2 chaao3",
+            "notes": ["You might hear แปด(8)โมงเช้า instead",
+                      "เช้า is sometimes omitted, so you might hear สองโมง or แปดโมง, especially when followed by minutes"]
         },
         "9": {
             "thai": "สามโมงเช้า",
-            "transcribed": "saam5 mo:hng2 chaao3"
+            "transcribed": "saam5 mo:hng2 chaao3",
+            "notes": ["You might hear เก้า(9)โมงเช้า instead",
+                      "เช้า is sometimes omitted, so you might hear สามโมง or เก้าโมง, especially when followed by minutes"]
         },
         "10": {
             "thai": "สี่โมงเช้า",
-            "transcribed": "see1 mo:hng2 chaao3"
+            "transcribed": "see1 mo:hng2 chaao3",
+            "notes": ["You might hear สิบ(10)โมงเช้า instead",
+                      "เช้า is sometimes omitted, so you might hear สี่โมง or สิบโมง, especially when followed by minutes"]
         },
         "11": {
             "thai": "ห้าโมงเช้า",
-            "transcribed": "haa4 mo:hng2 chaao3"
+            "transcribed": "haa4 mo:hng2 chaao3",
+            "notes": ["You might hear สิบเอ็ด(11)โมงเช้า instead",
+                      "เช้า is sometimes omitted, so you might hear ห้าโมง or สิบเอ็ดโมง, especially when followed by minutes"]
         },
         "12": {
             "thai": "เที่ยง",
-            "transcribed": "thiiang4"
+            "transcribed": "thiiang4",
+            "notes": []
         },
         "13": {
             "thai": "บ่ายโมง",
-            "transcribed": "baai1 mo:hng2"
+            "transcribed": "baai1 mo:hng2",
+            "notes": []
         },
         "14": {
             "thai": "บ่ายสองโมง",
-            "transcribed": "baai1 saawng5 mo:hng2"
+            "transcribed": "baai1 saawng5 mo:hng2",
+            "notes": ["โมง is sometimes omitted, so you might hear บ่ายสอง, especially when followed by minutes"]
         },
         "15": {
             "thai": "บ่ายสามโมง",
-            "transcribed": "baai1 saam5 mo:hng2"
+            "transcribed": "baai1 saam5 mo:hng2",
+            "notes": ["โมง is sometimes omitted, so you might hear บ่ายสาม, especially when followed by minutes"]
         },
         "16": {
-            "thai": "บ่ายสี่โมง",
-            "transcribed": "baai1 see1 mo:hng2"
+            "thai": "สี่โมงเย็น",
+            "transcribed": "see1 mo:hng2 yen2",
+            "notes": ["4pm is on the border between early and late afternoon, so it can also be referred to as บ่ายสี่โมง (baai1 see1 mo:hng2)"]
         },
         "17": {
             "thai": "ห้าโมงเย็น",
-            "transcribed": "haa4 mo:hng2 yen2"
+            "transcribed": "haa4 mo:hng2 yen2",
+            "notes": []
         },
         "18": {
             "thai": "หกโมงเย็น",
-            "transcribed": "hohk1 mo:hng2 yen2"
+            "transcribed": "hohk1 mo:hng2 yen2",
+            "notes": []
         },
         "19": {
-            "thai": "ทุ่ม",
-            "transcribed": "thoom4"
+            "thai": "หนึ่งทุ่ม",
+            "transcribed": "neung1 thoom4",
+            "notes": ["Sometimes the two words are reversed and you'll hear ทุ่มหนึ่ง"]
         },
         "20": {
             "thai": "สองทุ่ม",
-            "transcribed": "saawng5 thoom4"
+            "transcribed": "saawng5 thoom4",
+            "notes": []
         },
         "21": {
             "thai": "สามทุ่ม",
-            "transcribed": "saam5 thoom4"
+            "transcribed": "saam5 thoom4",
+            "notes": []
         },
         "22": {
             "thai": "สี่ทุ่ม",
-            "transcribed": "see1 thoom4"
+            "transcribed": "see1 thoom4",
+            "notes": []
         },
         "23": {
             "thai": "ห้าทุ่ม",
-            "transcribed": "haa4 thoom4"
+            "transcribed": "haa4 thoom4",
+            "notes": []
         },
         "0": {
             "thai": "เที่ยงคืน",
-            "transcribed": "thiiang4 kheuun2"
+            "transcribed": "thiiang4 kheuun2",
+            "notes": []
         }
     },
     "minutes": {
         "0": {
             "thai": "",
-            "transcribed": ""
+            "transcribed": "",
+            "notes": []
         },
         "10": {
             "thai": "สิบ",
-            "transcribed": "sip1"
+            "transcribed": "sip1",
+            "notes": []
         },
         "20": {
             "thai": "ยี่สิบ",
-            "transcribed": "yee4 sip1"
+            "transcribed": "yee4 sip1",
+            "notes": []
         },
         "30": {
             "thai": "สามสิบ",
-            "transcribed": "saam5 sip1"
+            "transcribed": "saam5 sip1",
+            "notes": ["ครึ่ง means half, and can be used instead of สามสิบ when it's half past the hour"]
         },
         "40": {
             "thai": "สี่สิบ",
-            "transcribed": "see1 sip1"
+            "transcribed": "see1 sip1",
+            "notes": []
         },
         "50": {
             "thai": "ห้าสิบ",
-            "transcribed": "haa4 sip1"
+            "transcribed": "haa4 sip1",
+            "notes": []
         },
         "01": {
             "thai": "หนึ่ง",
-            "transcribed": "neung1"
+            "transcribed": "neung1",
+            "notes": []
         },
         "1": {
             "thai": "เอ็ด",
-            "transcribed": "et1"
+            "transcribed": "et1",
+            "notes": []
         },
         "2": {
             "thai": "สอง",
-            "transcribed": "saawng5"
+            "transcribed": "saawng5",
+            "notes": []
         },
         "3": {
             "thai": "สาม",
-            "transcribed": "saam5"
+            "transcribed": "saam5",
+            "notes": []
         },
         "4": {
             "thai": "สี่",
-            "transcribed": "see1"
+            "transcribed": "see1",
+            "notes": []
         },
         "5": {
             "thai": "ห้า",
-            "transcribed": "haa4"
+            "transcribed": "haa4",
+            "notes": []
         },
         "6": {
             "thai": "หก",
-            "transcribed": "hohk1"
+            "transcribed": "hohk1",
+            "notes": []
         },
         "7": {
             "thai": "เจ็ด",
-            "transcribed": "jet1"
+            "transcribed": "jet1",
+            "notes": []
         },
         "8": {
             "thai": "แปด",
-            "transcribed": "bpaaet1"
+            "transcribed": "bpaaet1",
+            "notes": []
         },
         "9": {
             "thai": "เก้า",
-            "transcribed": "gaao1"
+            "transcribed": "gaao1",
+            "notes": []
         }
     },
     "words": {
         "minutes": {
             "thai": "นาที",
             "transcribed": "naa2 thee2",
-            "notes": "นาที means \"minutes\""
+            "notes": ["นาที means \"minutes\" and this word can be omitted when giving the time"]
         }
     }
 }
